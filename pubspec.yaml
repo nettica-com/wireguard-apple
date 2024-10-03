@@ -21,11 +21,11 @@ flutter:
   plugin:
     platforms:
       ios:
-        pluginClass: WireGuardKitPlugin
-        podspec: wireguard_kit.podspec
+        pluginClass: WireGuardKit
+        podspec: WireGuardKit.podspec
       macos:
-        pluginClass: WireGuardKitPlugin
-        podspec: wireguard_kit.podspec
+        pluginClass: WireGuardKit
+        podspec: WireGuardKit.podspec
 
   assets:
     - Sources/WireGuardKitC/

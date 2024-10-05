@@ -42,6 +42,7 @@ Pod::Spec.new do |spec|
       echo "Building Go libraries"
       ./build-libwg.sh
     SCRIPT
+  }
 
   spec.exclude_files = [
     "Sources/Shared/**/test*.*",

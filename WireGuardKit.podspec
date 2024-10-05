@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "15.0"
   spec.osx.deployment_target = "12.0"
 
-  spec.source = { :git => "https://github.com/nettica-com/wireguard-apple.git", :tag => "#{spec.version}" }
+  spec.source = { :git => "https://github.com/nettica-com/wireguard-apple.git", :tag => "master" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -46,6 +46,7 @@ Pod::Spec.new do |spec|
     "SWIFT_INCLUDE_PATHS" => [
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitC/**",
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKit/**",
+      "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitGo/**",
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitGo/wireguard.h",
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/Shared/**/*",
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardNetworkExtension/**/*",
@@ -53,6 +54,7 @@ Pod::Spec.new do |spec|
     "HEADER_SEARCH_PATHS" => [
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitGo/wireguard.h",
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitC",
+      "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitGo",
     ],
     "APPLICATION_EXTENSION_API_ONLY" => "YES",
   }

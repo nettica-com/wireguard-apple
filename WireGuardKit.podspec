@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
     :name => 'Build Go code',
     :script => <<-SCRIPT
       echo "Building Go libraries"
-      ./build-libwg.sh
+      ${PROJECT_DIR}/WireGuardKit/build-libwg.sh
     SCRIPT
   }
 

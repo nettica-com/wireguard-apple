@@ -1,3 +1,3 @@
-#include "../WireGuardKitC/WireGuardKitC.h"
+#include "WireGuardKitC.h"
 #include "../WireGuardKitGo/wireguard.h"
 #include "ringlogger.h"

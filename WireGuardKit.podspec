@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "WireGuardKit"
-  spec.version = "0.5"
+  spec.version = "0.4"
   spec.summary = "WireGuard for iOS and macOS"
 
   spec.description = <<-DESC
@@ -52,6 +52,7 @@ Pod::Spec.new do |spec|
     ],
     "HEADER_SEARCH_PATHS" => [
       "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitGo/wireguard.h",
+      "${PODS_TARGET_SRCROOT}/WireGuardKit/Sources/WireGuardKitC",
     ],
     "APPLICATION_EXTENSION_API_ONLY" => "YES",
   }

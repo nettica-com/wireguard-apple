@@ -1,5 +1,5 @@
-name: wireguard_kit
-version: 0.5.0
+name: WireguardKit
+version: 0.4.0
 description: >
   WireGuard for iOS and macOS
 

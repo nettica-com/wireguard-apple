@@ -35,6 +35,14 @@ Pod::Spec.new do |spec|
     "Sources/WireGuardKitGo/wireguard.h",
     "Sources/WireGuardNetworkExtension/**/*.{c,h,swift}",
   ]
+
+  spec.script_phase = {
+    :name => 'Build Go code',
+    :script => <<-SCRIPT
+      echo "Building Go libraries"
+      ./build-libwg.sh
+    SCRIPT
+
   spec.exclude_files = [
     "Sources/Shared/**/test*.*",
     "Sources/WireGuardKitGo/out/**",

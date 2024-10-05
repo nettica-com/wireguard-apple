@@ -33,7 +33,9 @@ Pod::Spec.new do |spec|
     "Sources/WireGuardKit/**/*.{swift}",
     "Sources/Shared/**/*.{c,h,swift}",
     "Sources/WireGuardKitGo/wireguard.h",
+    "Sources/WireGuardKitGo/**/* .{go}",
     "Sources/WireGuardNetworkExtension/**/*.{c,h,swift}",
+    "build-libwg.sh",
   ]
 
   spec.script_phase = {
